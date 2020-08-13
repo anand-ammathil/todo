@@ -13,10 +13,15 @@ Directory fronted contain the react fronted app
 
 ## Backend
 
-### DB config
+### Config
 
 Database connection setting is in
+
 **./backend/config/config.json**
+
+Default port is 8080 you can change though 'SERVER_PORT' environment value or directly at
+
+**./backend/bin/www**
 
 ### Running backend
 
@@ -31,7 +36,7 @@ yarn run dev
 
 ### API config
 
-api link is assigned though 'api_server' environment value or directly at
+api link is assigned though 'API_SERVER' environment value or directly at
 
 **./frontend/src/utils/api.js**
 

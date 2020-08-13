@@ -28,7 +28,11 @@ function Todo() {
 		<div>
 			<NavBar title='Todo List' action={<Logout />} />
 			<div className='d-flex justify-content-center pt-3 row'>
-				{authState.user_role === "ADMIN" && <NewTodo />}
+				{authState.user_role === "ADMIN" ? (
+					<NewTodo />
+				) : (
+					"Login as admin to add, edit, delete todos"
+				)}
 			</div>
 			<TodoList />
 		</div>

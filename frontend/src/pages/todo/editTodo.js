@@ -34,7 +34,7 @@ function TodoItem({ item, doneUpdate }) {
 	};
 
 	return (
-		<div className='row border m-2 p-2'>
+		<div className='border m-2 p-2'>
 			<form
 				onSubmit={(e) => {
 					e.preventDefault();

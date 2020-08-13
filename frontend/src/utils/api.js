@@ -3,7 +3,7 @@ import axios from "axios";
 import { navigate } from "@reach/router";
 
 const api = axios.create({
-	baseURL: process.env.api_server || "http://localhost:8080",
+	baseURL: process.env.API_SERVER || "http://localhost:8080",
 	responseType: "json",
 	withCredentials: true,
 });

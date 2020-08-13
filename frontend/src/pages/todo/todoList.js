@@ -17,6 +17,9 @@ function TodoList() {
 							></TodoItem>
 						);
 					})}
+					{todoState.todos.length === 0 && (
+						<div className='pt-5'>Todos list is empty.</div>
+					)}
 				</div>
 			</div>
 		</div>

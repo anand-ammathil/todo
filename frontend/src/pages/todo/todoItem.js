@@ -6,7 +6,7 @@ import EditTodo from "./editTodo";
 function TodoItem(props) {
 	const item = props.item;
 	const authState = useContext(AuthState);
-	const [editEnabled, setEditEnabled] = useState(false);
+	const [editEnabled, setEditEnabled] = useState(true);
 
 	return (
 		<div className='col-md-12'>
